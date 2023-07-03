@@ -1,1 +1,2 @@
-
+Each of these scripts can be used as a custom field in FileWave.
+For most part, each custom field checks the last 50,000 lines of /var/log/fwcld.log for a specific FileWave error or status message.
