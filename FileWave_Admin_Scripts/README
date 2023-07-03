@@ -2,7 +2,7 @@ The name of the FileWave console is FileWave Admin, which identifies clients, so
  
 There are seven different types of scripts that can be used in a FileWave fileset:
 
-Requirements Scripts – A requirements script checks the requirement on the Fileset before any dependencies are downloaded. If any requirement script fails (return non-zero), then the Fileset and its dependencies will not be downloaded nor installed.
+__Requirements Scripts__ – A requirements script checks the requirement on the Fileset before any dependencies are downloaded. If any requirement script fails (return non-zero), then the Fileset and its dependencies will not be downloaded nor installed.
 
 Preflight Scripts – A preflight script checks the needs of the Fileset before the Fileset downloads, but after dependencies have been installed. If any preflight script fails (returns non-zero), then the Fileset won't be downloaded or installed.
 
