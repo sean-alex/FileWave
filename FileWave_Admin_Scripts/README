@@ -1,5 +1,5 @@
 The name of the FileWave console is FileWave Admin, which identifies clients, software (filesets), and scoping associations between clients and filesets.
-
+ 
 There are seven different types of scripts that can be used in a FileWave fileset:
 
 Requirements Scripts – A requirements script checks the requirement on the Fileset before any dependencies are downloaded. If any requirement script fails (return non-zero), then the Fileset and its dependencies will not be downloaded nor installed.
