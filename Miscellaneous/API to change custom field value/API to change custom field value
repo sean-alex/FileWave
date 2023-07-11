@@ -1,1 +1,21 @@
+#------------------------------------------------------------------------------------------------
+# UPDATE FILEWAVE CLIENT CUSTOM FIELD
+#------------------------------------------------------------------------------------------------
+# change value of custom field from Assigned to NotAssigned
+pathFilewaveClientplist="/Library/Preferences/com.filewave.Client.plist"
+APIkey=""
+server_dns=""
+device_id="$( defaults read ${pathFilewaveClientplist} ClientMachineFingerprint )"
 
+# fieldType="stringfields"
+customField1="Assigned"
+# fieldValue1 options
+# Assigned
+# NotAssigned (default)
+fieldValue1="NotAssigned"
+
+# update custom field for customField1
+curl --silent --output /dev/null -X PATCH https://$server_dns:20443/inv/api/v1/client/"$device_id" -H "authorization: $APIkey" -H "cache-control: no- cache" -H "content-type: application/json" -d "{\"CustomFields\": {\"$customField1\":{\"exitCode\":0,\"status\":0,\"updateTime\":\"$(date +%FT%TZ)\",\"value\":\"$fieldValue1\"}}}"
+
+# slight wait
+sleep 2
