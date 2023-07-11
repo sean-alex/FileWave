@@ -1,1 +1,1 @@
-
+"API to change custom field value" is a simple code snippet to use FileWave API to change the value of a custom field -- rather than wait for FileWave client to wait up to 24 hours to update inventory.
