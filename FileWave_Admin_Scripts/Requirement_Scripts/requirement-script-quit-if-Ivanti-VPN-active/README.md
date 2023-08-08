@@ -1,5 +1,5 @@
 
-In many cases, the command `scutil <<< "show State:/Network/Global/IPv4"` may provide information that a VPN connection is able.
+In many cases, the command `scutil <<< "show State:/Network/Global/IPv4"` may provide information that a VPN connection is enabled.
 
 If active, then the output will be something like this:
 
